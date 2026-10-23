@@ -1,0 +1,9 @@
+Map objects:
+AVM_HND_ParkingBay
+AVM_HND_ParkingMeter
+
+Kits:
+AVM_ParkingBay_Kit
+AVM_ParkingBay
+AVM_ParkingMeter_Kit
+AVM_ParkingMeter
