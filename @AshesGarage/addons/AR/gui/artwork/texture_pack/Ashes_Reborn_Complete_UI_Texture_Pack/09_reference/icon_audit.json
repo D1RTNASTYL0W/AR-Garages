@@ -1,0 +1,752 @@
+[
+  {
+    "name": "ar_icon_info_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_gear_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      112,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_wrench_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      18,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_car_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      26,
+      111,
+      102
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_user_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      24,
+      16,
+      104,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_rotate_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      16,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_warning_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      18,
+      21,
+      110,
+      107
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_fuel_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      26,
+      111,
+      102
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_heart_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      23,
+      111,
+      105
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_search_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_chevron-right_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      31,
+      17,
+      94,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_clock_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_user_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      24,
+      16,
+      104,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_trash_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      20,
+      17,
+      108,
+      112
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_battery_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      36,
+      111,
+      92
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_rotate_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      16,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_pin_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      31,
+      16,
+      97,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_garage_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      26,
+      17,
+      103,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_clock_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_info_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_box_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      20,
+      106,
+      108
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_shield_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      24,
+      16,
+      104,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_star_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      19,
+      111,
+      109
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_shield_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      24,
+      16,
+      104,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_search_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_chevron-left_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      34,
+      17,
+      98,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_heart_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      23,
+      111,
+      105
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_wrench_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      18,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_battery_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      36,
+      111,
+      92
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_gear_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      112,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_wheel_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_garage_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      26,
+      17,
+      103,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_warning_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      18,
+      21,
+      110,
+      107
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_close_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      24,
+      23,
+      105,
+      104
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_star_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      18,
+      17,
+      110,
+      104
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_fuel_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      26,
+      111,
+      102
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_pin_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      31,
+      16,
+      97,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_car_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      26,
+      111,
+      102
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_check_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      23,
+      31,
+      105,
+      96
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_chevron-left_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      34,
+      17,
+      98,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_close_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      24,
+      23,
+      105,
+      104
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_check_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      23,
+      31,
+      105,
+      96
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_trash_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      20,
+      17,
+      108,
+      112
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_wheel_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      17,
+      111,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_chevron-right_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      31,
+      17,
+      94,
+      111
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_box_cyan_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      17,
+      20,
+      106,
+      108
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_favorite_off_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      18,
+      17,
+      110,
+      104
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_favorite_on_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      18,
+      17,
+      110,
+      104
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_favorite_hover_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      9,
+      8,
+      119,
+      113
+    ],
+    "transparent_corners": true
+  },
+  {
+    "name": "ar_icon_favorite_pressed_128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      18,
+      17,
+      110,
+      104
+    ],
+    "transparent_corners": true
+  }
+]

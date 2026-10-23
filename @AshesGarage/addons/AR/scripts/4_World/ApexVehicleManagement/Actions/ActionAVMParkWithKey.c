@@ -33,7 +33,7 @@ class ActionAVMParkWithKey: ActionLockUnlockCar
 		if (transport && parkingKey)
 		{
             string reason = "";
-            if (MCK_Transport.HasMCKAssigned(transport) && AVM_Helper.CanPark(player, transport, reason))
+            if (AR_VehicleLock.HasKeyAssigned(transport) && AVM_Helper.CanPark(player, transport, reason))
             {
                 m_Text = "Park vehicle";
 			    return true;
@@ -63,12 +63,12 @@ class ActionAVMParkWithKey: ActionLockUnlockCar
 		if( transport )
 		{
             string reason = "";
-			if(MCK_Transport.HasMCKAssigned(transport) && AVM_Helper.CanPark(player, transport, reason))
+			if(AR_VehicleLock.HasKeyAssigned(transport) && AVM_Helper.CanPark(player, transport, reason))
 			{
 	            #ifdef SERVER
 	            if(ApexVehicleManagementManager.ParkVehicle(player.GetIdentity(), transport.GetPosition()))
 	            {
-	                MCK_LogPlayerActivity(player, "(Admin) parked vehicle " + transport.GetDisplayName() + " (ID: " + MCK_Transport.GetTransportId(transport) + ")");
+	                AR_LogKeyActivity(player, "(Admin) parked vehicle " + transport.GetDisplayName() + " (ID: " + AR_VehicleLock.GetTransportId(transport) + ")");
 	            }
 	            #endif	
 			}

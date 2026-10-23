@@ -1,0 +1,12 @@
+*.layout
+*.c
+*.cpp
+*.paa
+*.rvmat
+*.p3d
+*.edds
+*.csv
+*.json
+*.txt
+*.xml
+$PBOPREFIX$

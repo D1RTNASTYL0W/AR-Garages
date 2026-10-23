@@ -26,6 +26,12 @@ modded class PlayerBase
 		case AVM_RPCs.RPC_PARKCAR:
 			ApexVehicleManagementManager.RPC_ParkVehicle(sender, ctx);
 			break;
+		case AVM_RPCs.RPC_DELETECAR:
+			ApexVehicleManagementManager.RPC_DeleteVehicle(sender, ctx);
+			break;
+		case AVM_RPCs.RPC_REQUEST_KEY_NAME:
+			ApexVehicleManagementManager.RPC_RequestKeyName(sender, ctx);
+			break;
 		#endif
 		default:
 			break;
@@ -45,6 +51,7 @@ modded class PlayerBase
 
 		menu.SetTarget(param.param1.Position, param.param1.Orientation);
 		menu.SetCarsStoredCount(param.param1.CarsStoredCount);
+		menu.SetNearbyParkCar(param.param1.NearbyParkCar);
 		if (!param.param1.StoredCars)
 			return;
 		foreach(AVM_StoredCarClient StoredCar : param.param1.StoredCars)

@@ -1,0 +1,1 @@
+class AR_CarKeyTag_Base : ItemBase {};

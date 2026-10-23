@@ -1,0 +1,14 @@
+{
+    "version": 4,
+    "DeleteExpiredCars": 0,
+    "StoredCarLifetime": 2678400,
+    "StoreSaveInterval": 60.0,
+    "RefuelCars": 0,
+    "HealCars": 0,
+    "MaxStoredCarsPerPlayer": 10,
+    "StoreCargo": 0,
+    "ItemsBlacklist": [ "YOUR_BANNED_ITEM_NAME" ],
+    "AllowRetrieveWithinRadiusOnly": 0,
+    "RadiusRetrieve": 100,
+    "VehicleBlacklist": [ "YOUR_BANNED_VEHICLE_NAME" ]
+}

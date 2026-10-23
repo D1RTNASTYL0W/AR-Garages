@@ -1,0 +1,1458 @@
+FrameWidgetClass ContainerWidget {
+ clipchildren 0
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass AVMDimmer {
+   visible 0
+   ignorepointer 1
+   color 0.01 0.015 0.03 0.86
+   position 0 0
+   size 1 1
+   style UIDefaultPanel
+  }
+  PanelWidgetClass AVMChromeFill {
+   visible 0
+   ignorepointer 1
+   color 0.035 0.055 0.08 1
+   position 0.07 0.06
+   size 0.86 0.80
+   style UIDefaultPanel
+  }
+  ImageWidgetClass AVMChrome {
+   ignorepointer 1
+   position 0.07 0.06
+   size 0.86 0.80
+   color 1 1 1 1
+   image0 "AshesReborn/gui/textures/ar_main_background.paa"
+   mode blend
+   "src alpha" 1
+   "stretch mode" stretch_w_h
+  }
+  FrameWidgetClass AVMChromeFrame {
+   visible 0
+   ignorepointer 1
+   clipchildren 0
+   position 0.07 0.06
+   size 0.86 0.80
+   {
+    ImageWidgetClass AVMChromeTL {
+     ignorepointer 1
+     position 0 0
+     size 0.020 0.038
+     image0 "AshesReborn/gui/textures/ar_chrome_tl.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass AVMChromeTop {
+     ignorepointer 1
+     position 0.020 0
+     size 0.960 0.038
+     image0 "AshesReborn/gui/textures/ar_chrome_top.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass AVMChromeTR {
+     ignorepointer 1
+     position 0.980 0
+     size 0.020 0.038
+     image0 "AshesReborn/gui/textures/ar_chrome_tr.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass AVMChromeLeft {
+     ignorepointer 1
+     position 0 0.038
+     size 0.020 0.924
+     image0 "AshesReborn/gui/textures/ar_chrome_left.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass AVMChromeCenter {
+     ignorepointer 1
+     position 0.020 0.038
+     size 0.960 0.924
+     image0 "AshesReborn/gui/textures/ar_chrome_center.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass AVMChromeRight {
+     ignorepointer 1
+     position 0.980 0.038
+     size 0.020 0.924
+     image0 "AshesReborn/gui/textures/ar_chrome_right.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass AVMChromeBL {
+     ignorepointer 1
+     position 0 0.962
+     size 0.020 0.038
+     image0 "AshesReborn/gui/textures/ar_chrome_bl.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass AVMChromeBot {
+     ignorepointer 1
+     position 0.020 0.962
+     size 0.960 0.038
+     image0 "AshesReborn/gui/textures/ar_chrome_bot.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass AVMChromeBR {
+     ignorepointer 1
+     position 0.980 0.962
+     size 0.020 0.038
+     image0 "AshesReborn/gui/textures/ar_chrome_br.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+   }
+  }
+  ImageWidgetClass AVMBackdrop { visible 0 ignorepointer 1 position 0 0 size 0.01 0.01 }
+  PanelWidgetClass AVMBorder { visible 0 ignorepointer 1 position 0 0 size 0.01 0.01 }
+  FrameWidgetClass MainWindowWidget {
+   clipchildren 0
+   position 0.07 0.06
+   size 0.86 0.80
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    ImageWidgetClass HeaderPanel {
+     visible 0
+     ignorepointer 1
+     position 0.016 0.018
+     size 0.968 0.100
+     image0 "AshesReborn/gui/textures/ar_header.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    TextWidgetClass ApexBrandAR {
+     ignorepointer 1
+     position 0.028 0.028
+     size 0.06 0.048
+     text "AR"
+     font "gui/fonts/metronbook-bold22"
+     "text color" 0.96 0.97 1 1
+    }
+    TextWidgetClass ApexTitle {
+     ignorepointer 1
+     position 0.082 0.028
+     size 0.28 0.048
+     text "/  ASHES REBORN"
+     font "gui/fonts/metronbook-bold22"
+     "text color" 0.15 0.78 1 1
+    }
+    TextWidgetClass ApexSubtitle {
+     ignorepointer 1
+     position 0.028 0.078
+     size 0.32 0.028
+     text "VEHICLE MANAGEMENT / CROSS-SERVER GARAGE"
+     font "gui/fonts/metronbook14"
+     "text color" 0.65 0.76 0.85 1
+    }
+    ImageWidgetClass ARHeaderDivider {
+     ignorepointer 1
+     position 0.016 0.122
+     size 0.968 0.006
+     image0 "AshesReborn/gui/textures/ar_divider.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass ARImageRetrieveBtn {
+     ignorepointer 1
+     position 0.36 0.028
+     size 0.12 0.078
+     image0 "AshesReborn/gui/textures/ar_nav_idle.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass ARIconVehicles {
+     ignorepointer 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+     position 0.410 0.030
+     size 32 32
+     image0 "AshesReborn/gui/textures/ar_icon_car_cyan.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    TextWidgetClass ARLabelRetrieveBtn {
+     ignorepointer 1
+     position 0.36 0.066
+     size 0.12 0.036
+     text "MY VEHICLES"
+     font "gui/fonts/metronbook-bold16"
+     "text color" 0.89 0.93 0.96 1
+     "text halign" center
+     "text valign" center
+    }
+    ButtonWidgetClass RetrieveBtn {
+     position 0.36 0.028
+     size 0.12 0.078
+     text ""
+     color 0 0 0 0
+     style Empty
+    }
+    ImageWidgetClass ARImageParkBtn {
+     ignorepointer 1
+     position 0.485 0.028
+     size 0.12 0.078
+     image0 "AshesReborn/gui/textures/ar_nav_idle.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass ARIconPark {
+     ignorepointer 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+     position 0.535 0.030
+     size 32 32
+     image0 "AshesReborn/gui/textures/ar_icon_garage.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    TextWidgetClass ARLabelParkBtn {
+     ignorepointer 1
+     position 0.485 0.066
+     size 0.12 0.036
+     text "PARK VEHICLE"
+     font "gui/fonts/metronbook-bold16"
+     "text color" 0.89 0.93 0.96 1
+     "text halign" center
+     "text valign" center
+    }
+    ButtonWidgetClass ParkBtn {
+     position 0.485 0.028
+     size 0.12 0.078
+     text ""
+     color 0 0 0 0
+     style Empty
+    }
+    ImageWidgetClass ARTabFavBg {
+     ignorepointer 1
+     position 0.610 0.028
+     size 0.12 0.078
+     image0 "AshesReborn/gui/textures/ar_nav_idle.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass ARIconFav {
+     ignorepointer 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+     position 0.660 0.030
+     size 32 32
+     image0 "AshesReborn/gui/textures/ar_icon_favorite_off.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    TextWidgetClass ARFavoritesLabel {
+     ignorepointer 1
+     position 0.610 0.066
+     size 0.12 0.036
+     text "FAVORITES"
+     font "gui/fonts/metronbook-bold16"
+     "text color" 0.89 0.93 0.96 1
+     "text halign" center
+     "text valign" center
+    }
+    ButtonWidgetClass ARFavoritesFilter {
+     position 0.610 0.028
+     size 0.12 0.078
+     text ""
+     color 0 0 0 0
+     style Empty
+    }
+    ImageWidgetClass ARTabRecentBg {
+     ignorepointer 1
+     position 0.735 0.028
+     size 0.12 0.078
+     image0 "AshesReborn/gui/textures/ar_nav_idle.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass ARIconRecent {
+     ignorepointer 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+     position 0.785 0.030
+     size 32 32
+     image0 "AshesReborn/gui/textures/ar_icon_clock.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    TextWidgetClass AROrderLabel {
+     ignorepointer 1
+     position 0.735 0.066
+     size 0.12 0.036
+     text "RECENT"
+     font "gui/fonts/metronbook-bold16"
+     "text color" 0.89 0.93 0.96 1
+     "text halign" center
+     "text valign" center
+    }
+    ButtonWidgetClass ARReverseOrder {
+     position 0.735 0.028
+     size 0.12 0.078
+     text ""
+     color 0 0 0 0
+     style Empty
+    }
+    ImageWidgetClass ARDotGreen {
+     ignorepointer 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+     position 0.858 0.050
+     size 16 16
+     image0 "AshesReborn/gui/textures/ar_dot_green.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    TextWidgetClass MongoLabel {
+     ignorepointer 1
+     position 0.872 0.038
+     size 0.082 0.054
+     text "MONGODB CONNECTED"
+     font "gui/fonts/metronbook14"
+     "text color" 0.00 0.90 0.36 1
+     "text halign" left
+     "text valign" center
+    }
+    ImageWidgetClass CloseBg {
+     ignorepointer 1
+     position 0.960 0.040
+     size 0.022 0.044
+     image0 "AshesReborn/gui/textures/ar_close_idle.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" center
+    }
+    TextWidgetClass CloseLabel {
+     ignorepointer 1
+     position 0.957 0.038
+     size 0.028 0.054
+     text "X"
+     font "gui/fonts/metronbook-bold18"
+     "text color" 0.96 0.97 1 1
+     "text halign" center
+     "text valign" center
+    }
+    ButtonWidgetClass btn_UIClose {
+     position 0.957 0.038
+     size 0.028 0.054
+     text ""
+     color 0 0 0 0
+     style Empty
+    }
+
+    ImageWidgetClass VehicleListPanel {
+     ignorepointer 1
+     position 0.016 0.130
+     size 0.258 0.710
+     color 0.70 0.78 0.86 1
+     image0 "AshesReborn/gui/textures/ar_section_backdrop.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    FrameWidgetClass VehicleListFrame {
+     clipchildren 0
+     position 0.016 0.130
+     size 0.258 0.710
+     {
+      TextWidgetClass ListHeading {
+       ignorepointer 1
+       position 0.05 0.018
+       size 0.70 0.045
+       text "MY VEHICLES"
+       font "gui/fonts/metronbook-bold16"
+       "text color" 0.15 0.78 1 1
+      }
+      ImageWidgetClass SearchFrame {
+       ignorepointer 1
+       position 0.04 0.075
+       size 0.92 0.072
+       image0 "AshesReborn/gui/textures/ar_search_idle.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      ImageWidgetClass ARSearchIcon {
+       ignorepointer 1
+            position 0.058 0.092
+     size 0.055 0.040
+       image0 "AshesReborn/gui/textures/ar_icon_search.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      TextWidgetClass ARSearchPlaceholder {
+       ignorepointer 1
+       position 0.12 0.088
+       size 0.64 0.048
+       text "Search vehicle / owner / ID"
+       font "gui/fonts/metronbook16"
+       "text color" 0.61 0.70 0.78 1
+      }
+      EditBoxWidgetClass ARSearch {
+       position 0.12 0.088
+       size 0.66 0.048
+       text ""
+       font "gui/fonts/metronbook16"
+       style ServerBrowser
+       "text color" 0.96 0.97 1 1
+      }
+      ImageWidgetClass SearchClearBg {
+       ignorepointer 1
+            position 0.875 0.092
+     size 0.055 0.040
+       hexactsize 0
+       vexactsize 0
+       image0 "AshesReborn/gui/textures/ar_icon_close.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      TextWidgetClass SearchClearLabel {
+       ignorepointer 1
+       position 0.86 0.086
+       size 0.08 0.050
+       text "X"
+       font "gui/fonts/metronbook16"
+       "text color" 0.89 0.93 0.96 1
+       "text halign" center
+       "text valign" center
+      }
+      ButtonWidgetClass ARClearSearch {
+       position 0.82 0.088
+       size 0.12 0.048
+       text ""
+       color 0 0 0 0
+       style Empty
+      }
+      TextWidgetClass ARNoResults {
+       ignorepointer 1
+       visible 0
+       position 0.08 0.30
+       size 0.84 0.08
+       text "NO MATCHING VEHICLES"
+       font "gui/fonts/metronbook16"
+       "text color" 0.70 0.79 0.86 1
+      }
+      PanelWidgetClass ARRowCard0 {
+       color 0 0 0 0
+       position 0.04 0.175
+       size 0.92 0.100
+       {
+        ImageWidgetClass ARRowImage0 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_vehicle_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        PanelWidgetClass ARRowAccent0 { ignorepointer 1 position 0.012 0.18 size 0.012 0.64 color 0 0.75 1 0 }
+        ItemPreviewWidgetClass ARRowPreview0 { ignorepointer 1 keepsafezone 0 position 0.025 0.12 size 0.20 0.76 }
+        TextWidgetClass ARRowLabel0 { ignorepointer 1 position 0.23 0.08 size 0.62 0.38 text "" font "gui/fonts/metronbook-bold16" "text color" 0.96 0.97 1 1 }
+        TextWidgetClass ARRowMeta0 { ignorepointer 1 position 0.23 0.46 size 0.40 0.24 text "" font "gui/fonts/metronbook14" "text color" 0.70 0.79 0.86 1 }
+        TextWidgetClass ARRowId0 { ignorepointer 1 position 0.23 0.70 size 0.40 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.51 0.61 0.70 1 }
+        TextWidgetClass ARRowExpiry0 { ignorepointer 1 position 0.58 0.70 size 0.28 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 }
+        ImageWidgetClass ARRowStarIcon0 { ignorepointer 1 position 0.890 0.24 size 0.070 0.52 image0 "AshesReborn/gui/textures/ar_icon_favorite_off.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        ButtonWidgetClass ARRowStar0 { position 0.86 0.22 size 0.11 0.56 text "" font "gui/fonts/metronbook-bold18" "text color" 0.70 0.79 0.86 1 color 0 0 0 0 style Empty }
+        ButtonWidgetClass VehicleRow0 { position 0 0 size 0.86 1 text "" color 0 0 0 0 style Empty }
+       }
+      }
+      PanelWidgetClass ARRowCard1 {
+       color 0 0 0 0
+       position 0.04 0.283
+       size 0.92 0.100
+       {
+        ImageWidgetClass ARRowImage1 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_vehicle_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        PanelWidgetClass ARRowAccent1 { ignorepointer 1 position 0.012 0.18 size 0.012 0.64 color 0 0.75 1 0 }
+        ItemPreviewWidgetClass ARRowPreview1 { ignorepointer 1 keepsafezone 0 position 0.025 0.12 size 0.20 0.76 }
+        TextWidgetClass ARRowLabel1 { ignorepointer 1 position 0.23 0.08 size 0.62 0.38 text "" font "gui/fonts/metronbook-bold16" "text color" 0.96 0.97 1 1 }
+        TextWidgetClass ARRowMeta1 { ignorepointer 1 position 0.23 0.46 size 0.40 0.24 text "" font "gui/fonts/metronbook14" "text color" 0.70 0.79 0.86 1 }
+        TextWidgetClass ARRowId1 { ignorepointer 1 position 0.23 0.70 size 0.40 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.51 0.61 0.70 1 }
+        TextWidgetClass ARRowExpiry1 { ignorepointer 1 position 0.58 0.70 size 0.28 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 }
+        ImageWidgetClass ARRowStarIcon1 { ignorepointer 1 position 0.890 0.24 size 0.070 0.52 image0 "AshesReborn/gui/textures/ar_icon_favorite_off.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        ButtonWidgetClass ARRowStar1 { position 0.86 0.22 size 0.11 0.56 text "" font "gui/fonts/metronbook-bold18" "text color" 0.70 0.79 0.86 1 color 0 0 0 0 style Empty }
+        ButtonWidgetClass VehicleRow1 { position 0 0 size 0.86 1 text "" color 0 0 0 0 style Empty }
+       }
+      }
+      PanelWidgetClass ARRowCard2 {
+       color 0 0 0 0
+       position 0.04 0.391
+       size 0.92 0.100
+       {
+        ImageWidgetClass ARRowImage2 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_vehicle_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        PanelWidgetClass ARRowAccent2 { ignorepointer 1 position 0.012 0.18 size 0.012 0.64 color 0 0.75 1 0 }
+        ItemPreviewWidgetClass ARRowPreview2 { ignorepointer 1 keepsafezone 0 position 0.025 0.12 size 0.20 0.76 }
+        TextWidgetClass ARRowLabel2 { ignorepointer 1 position 0.23 0.08 size 0.62 0.38 text "" font "gui/fonts/metronbook-bold16" "text color" 0.96 0.97 1 1 }
+        TextWidgetClass ARRowMeta2 { ignorepointer 1 position 0.23 0.46 size 0.40 0.24 text "" font "gui/fonts/metronbook14" "text color" 0.70 0.79 0.86 1 }
+        TextWidgetClass ARRowId2 { ignorepointer 1 position 0.23 0.70 size 0.40 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.51 0.61 0.70 1 }
+        TextWidgetClass ARRowExpiry2 { ignorepointer 1 position 0.58 0.70 size 0.28 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 }
+        ImageWidgetClass ARRowStarIcon2 { ignorepointer 1 position 0.890 0.24 size 0.070 0.52 image0 "AshesReborn/gui/textures/ar_icon_favorite_off.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        ButtonWidgetClass ARRowStar2 { position 0.86 0.22 size 0.11 0.56 text "" font "gui/fonts/metronbook-bold18" "text color" 0.70 0.79 0.86 1 color 0 0 0 0 style Empty }
+        ButtonWidgetClass VehicleRow2 { position 0 0 size 0.86 1 text "" color 0 0 0 0 style Empty }
+       }
+      }
+      PanelWidgetClass ARRowCard3 {
+       color 0 0 0 0
+       position 0.04 0.499
+       size 0.92 0.100
+       {
+        ImageWidgetClass ARRowImage3 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_vehicle_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        PanelWidgetClass ARRowAccent3 { ignorepointer 1 position 0.012 0.18 size 0.012 0.64 color 0 0.75 1 0 }
+        ItemPreviewWidgetClass ARRowPreview3 { ignorepointer 1 keepsafezone 0 position 0.025 0.12 size 0.20 0.76 }
+        TextWidgetClass ARRowLabel3 { ignorepointer 1 position 0.23 0.08 size 0.62 0.38 text "" font "gui/fonts/metronbook-bold16" "text color" 0.96 0.97 1 1 }
+        TextWidgetClass ARRowMeta3 { ignorepointer 1 position 0.23 0.46 size 0.40 0.24 text "" font "gui/fonts/metronbook14" "text color" 0.70 0.79 0.86 1 }
+        TextWidgetClass ARRowId3 { ignorepointer 1 position 0.23 0.70 size 0.40 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.51 0.61 0.70 1 }
+        TextWidgetClass ARRowExpiry3 { ignorepointer 1 position 0.58 0.70 size 0.28 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 }
+        ImageWidgetClass ARRowStarIcon3 { ignorepointer 1 position 0.890 0.24 size 0.070 0.52 image0 "AshesReborn/gui/textures/ar_icon_favorite_off.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        ButtonWidgetClass ARRowStar3 { position 0.86 0.22 size 0.11 0.56 text "" font "gui/fonts/metronbook-bold18" "text color" 0.70 0.79 0.86 1 color 0 0 0 0 style Empty }
+        ButtonWidgetClass VehicleRow3 { position 0 0 size 0.86 1 text "" color 0 0 0 0 style Empty }
+       }
+      }
+      PanelWidgetClass ARRowCard4 {
+       color 0 0 0 0
+       position 0.04 0.607
+       size 0.92 0.100
+       {
+        ImageWidgetClass ARRowImage4 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_vehicle_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        PanelWidgetClass ARRowAccent4 { ignorepointer 1 position 0.012 0.18 size 0.012 0.64 color 0 0.75 1 0 }
+        ItemPreviewWidgetClass ARRowPreview4 { ignorepointer 1 keepsafezone 0 position 0.025 0.12 size 0.20 0.76 }
+        TextWidgetClass ARRowLabel4 { ignorepointer 1 position 0.23 0.08 size 0.62 0.38 text "" font "gui/fonts/metronbook-bold16" "text color" 0.96 0.97 1 1 }
+        TextWidgetClass ARRowMeta4 { ignorepointer 1 position 0.23 0.46 size 0.40 0.24 text "" font "gui/fonts/metronbook14" "text color" 0.70 0.79 0.86 1 }
+        TextWidgetClass ARRowId4 { ignorepointer 1 position 0.23 0.70 size 0.40 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.51 0.61 0.70 1 }
+        TextWidgetClass ARRowExpiry4 { ignorepointer 1 position 0.58 0.70 size 0.28 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 }
+        ImageWidgetClass ARRowStarIcon4 { ignorepointer 1 position 0.890 0.24 size 0.070 0.52 image0 "AshesReborn/gui/textures/ar_icon_favorite_off.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        ButtonWidgetClass ARRowStar4 { position 0.86 0.22 size 0.11 0.56 text "" font "gui/fonts/metronbook-bold18" "text color" 0.70 0.79 0.86 1 color 0 0 0 0 style Empty }
+        ButtonWidgetClass VehicleRow4 { position 0 0 size 0.86 1 text "" color 0 0 0 0 style Empty }
+       }
+      }
+      PanelWidgetClass ARRowCard5 {
+       color 0 0 0 0
+       position 0.04 0.715
+       size 0.92 0.100
+       {
+        ImageWidgetClass ARRowImage5 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_vehicle_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        PanelWidgetClass ARRowAccent5 { ignorepointer 1 position 0.012 0.18 size 0.012 0.64 color 0 0.75 1 0 }
+        ItemPreviewWidgetClass ARRowPreview5 { ignorepointer 1 keepsafezone 0 position 0.025 0.12 size 0.20 0.76 }
+        TextWidgetClass ARRowLabel5 { ignorepointer 1 position 0.23 0.08 size 0.62 0.38 text "" font "gui/fonts/metronbook-bold16" "text color" 0.96 0.97 1 1 }
+        TextWidgetClass ARRowMeta5 { ignorepointer 1 position 0.23 0.46 size 0.40 0.24 text "" font "gui/fonts/metronbook14" "text color" 0.70 0.79 0.86 1 }
+        TextWidgetClass ARRowId5 { ignorepointer 1 position 0.23 0.70 size 0.40 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.51 0.61 0.70 1 }
+        TextWidgetClass ARRowExpiry5 { ignorepointer 1 position 0.58 0.70 size 0.28 0.22 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 }
+        ImageWidgetClass ARRowStarIcon5 { ignorepointer 1 position 0.890 0.24 size 0.070 0.52 image0 "AshesReborn/gui/textures/ar_icon_favorite_off.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        ButtonWidgetClass ARRowStar5 { position 0.86 0.22 size 0.11 0.56 text "" font "gui/fonts/metronbook-bold18" "text color" 0.70 0.79 0.86 1 color 0 0 0 0 style Empty }
+        ButtonWidgetClass VehicleRow5 { position 0 0 size 0.86 1 text "" color 0 0 0 0 style Empty }
+       }
+      }
+      TextWidgetClass ParkList {
+       visible 0
+       ignorepointer 1
+       position 0.08 0.30
+       size 0.84 0.30
+       text ""
+       font "gui/fonts/metronbook18"
+       "text color" 0.85 0.97 1 1
+      }
+      TextWidgetClass AVMResultCount {
+       ignorepointer 1
+       position 0.05 0.930
+       size 0.40 0.045
+       text ""
+       font "gui/fonts/metronbook14"
+       "text color" 0.70 0.79 0.86 1
+      }
+      ImageWidgetClass ARImagePrevPage {
+       ignorepointer 1
+       position 0.46 0.925
+       size 0.12 0.050
+       image0 "AshesReborn/gui/textures/ar_button_dark_idle.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      ImageWidgetClass ARIconPrevPage {
+       ignorepointer 1
+            position 0.495 0.932
+     size 0.070 0.048
+       image0 "AshesReborn/gui/textures/ar_icon_chevron_left.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      ButtonWidgetClass PrevPage {
+       position 0.46 0.925
+       size 0.12 0.050
+       text "<"
+       font "gui/fonts/metronbook-bold18"
+       "text color" 0.89 0.93 0.96 1
+       color 0 0 0 0
+       style Empty
+      }
+      TextWidgetClass PageInfo {
+       ignorepointer 1
+       position 0.58 0.925
+       size 0.20 0.050
+       text ""
+       font "gui/fonts/metronbook14"
+       "text color" 0.70 0.79 0.86 1
+       "text halign" center
+       "text valign" center
+      }
+      ImageWidgetClass ARImageNextPage {
+       ignorepointer 1
+       position 0.79 0.925
+       size 0.12 0.050
+       image0 "AshesReborn/gui/textures/ar_button_dark_idle.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      ImageWidgetClass ARIconNextPage {
+       ignorepointer 1
+            position 0.825 0.932
+     size 0.070 0.048
+       image0 "AshesReborn/gui/textures/ar_icon_chevron_right.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      ButtonWidgetClass NextPage {
+       position 0.79 0.925
+       size 0.12 0.050
+       text ">"
+       font "gui/fonts/metronbook-bold18"
+       "text color" 0.89 0.93 0.96 1
+       color 0 0 0 0
+       style Empty
+      }
+     }
+    }
+
+    FrameWidgetClass DetailsPanel {
+     clipchildren 0
+     position 0.282 0.130
+     size 0.702 0.710
+     {
+      TextWidgetClass AVMVehicleTitle {
+       ignorepointer 1
+       position 0.01 0.000
+       size 0.68 0.072
+       text ""
+       font "gui/fonts/metronbook-bold22"
+       "text color" 0.96 0.97 1 1
+       "text valign" center
+      }
+      ImageWidgetClass ARTitleFavIcon {
+       ignorepointer 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 1
+       vexactsize 1
+     position 0.700 0.012
+     size 36 36
+       image0 "AshesReborn/gui/textures/ar_icon_favorite_off.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      ButtonWidgetClass ARTitleFavorite {
+       position 0.690 0.006
+       size 0.055 0.058
+       text ""
+       font "gui/fonts/metronbook-bold22"
+       "text color" 0.70 0.79 0.86 1
+       color 0 0 0 0
+       style Empty
+      }
+      ImageWidgetClass ARTagOffroadBg {
+       ignorepointer 1
+       position 0.01 0.078
+       size 0.14 0.038
+       image0 "AshesReborn/gui/textures/ar_badge.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      TextWidgetClass ARTagOffroadText {
+       ignorepointer 1
+       position 0.01 0.078
+       size 0.14 0.038
+       text ""
+       font "gui/fonts/metronbook14"
+       "text color" 0.89 0.93 0.96 1
+       "text halign" center
+       "text valign" center
+      }
+      ImageWidgetClass ARTagPersonalBg {
+       ignorepointer 1
+       position 0.16 0.078
+       size 0.18 0.038
+       image0 "AshesReborn/gui/textures/ar_badge.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      TextWidgetClass ARTagPersonalText {
+       ignorepointer 1
+       position 0.16 0.078
+       size 0.18 0.038
+       text ""
+       font "gui/fonts/metronbook14"
+       "text color" 0.89 0.93 0.96 1
+       "text halign" center
+       "text valign" center
+      }
+
+      ImageWidgetClass ARStatPanelBg {
+       ignorepointer 1
+       position 0.00 0.125
+       size 0.195 0.415
+       image0 "AshesReborn/gui/textures/ar_vehicle_stats.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      FrameWidgetClass ARStatsFrame {
+       position 0.00 0.125
+       size 0.195 0.415
+       {
+        TextWidgetClass ARStatsHeading {
+         ignorepointer 1
+         position 0.06 0.025
+         size 0.88 0.10
+         text "VEHICLE STATS"
+         font "gui/fonts/metronbook-bold18"
+         "text color" 0.15 0.78 1 1
+         "text valign" center
+        }
+       ImageWidgetClass ARStatIcon0 { ignorepointer 1 position 0.07 0.145 size 0.12 0.095 image0 "AshesReborn/gui/textures/ar_icon_heart_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+       TextWidgetClass ARStatLabel0 { ignorepointer 1 position 0.22 0.155 size 0.38 0.080 text "HEALTH" font "gui/fonts/metronbook16" "text color" 0.70 0.79 0.86 1 "text valign" center }
+       TextWidgetClass ARStatValue0 { ignorepointer 1 position 0.58 0.155 size 0.35 0.080 text "N/A" font "gui/fonts/metronbook16" "text color" 0.96 0.97 1 1 "text halign" right "text valign" center }
+       PanelWidgetClass ARStatTrack0 {
+        clipchildren 1
+        ignorepointer 1
+        color 0 0 0 0
+        position 0.07 0.255
+        size 0.86 0.048
+        style UIDefaultPanel
+        {
+         ImageWidgetClass ARStatTrackImg0 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_stat_track.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ImageWidgetClass ARStatFill0 { ignorepointer 1 position 0 0 size 0 1 image0 "AshesReborn/gui/textures/ar_stat_green.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        }
+       }
+       ImageWidgetClass ARStatIcon1 { ignorepointer 1 position 0.07 0.330 size 0.12 0.095 image0 "AshesReborn/gui/textures/ar_icon_wrench_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+       TextWidgetClass ARStatLabel1 { ignorepointer 1 position 0.22 0.340 size 0.38 0.080 text "ENGINE" font "gui/fonts/metronbook16" "text color" 0.70 0.79 0.86 1 "text valign" center }
+       TextWidgetClass ARStatValue1 { ignorepointer 1 position 0.58 0.340 size 0.35 0.080 text "N/A" font "gui/fonts/metronbook16" "text color" 0.96 0.97 1 1 "text halign" right "text valign" center }
+       PanelWidgetClass ARStatTrack1 {
+        clipchildren 1
+        ignorepointer 1
+        color 0 0 0 0
+        position 0.07 0.440
+        size 0.86 0.048
+        style UIDefaultPanel
+        {
+         ImageWidgetClass ARStatTrackImg1 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_stat_track.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ImageWidgetClass ARStatFill1 { ignorepointer 1 position 0 0 size 0 1 image0 "AshesReborn/gui/textures/ar_stat_green.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        }
+       }
+       ImageWidgetClass ARStatIcon2 { visible 0 ignorepointer 1 position 0.07 0.478 size 0.12 0.095 image0 "AshesReborn/gui/textures/ar_icon_gear_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+       TextWidgetClass ARStatLabel2 { visible 0 ignorepointer 1 position 0.22 0.480 size 0.38 0.080 text "GEARBOX" font "gui/fonts/metronbook16" "text color" 0.70 0.79 0.86 1 }
+       TextWidgetClass ARStatValue2 { visible 0 ignorepointer 1 position 0.58 0.480 size 0.35 0.080 text "N/A" font "gui/fonts/metronbook16" "text color" 0.96 0.97 1 1 "text halign" right }
+       PanelWidgetClass ARStatTrack2 {
+        visible 0
+        clipchildren 1
+        ignorepointer 1
+        color 0 0 0 0
+        position 0.07 0.535
+        size 0.86 0.045
+        style UIDefaultPanel
+        {
+         ImageWidgetClass ARStatTrackImg2 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_stat_track.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ImageWidgetClass ARStatFill2 { ignorepointer 1 position 0 0 size 0 1 image0 "AshesReborn/gui/textures/ar_stat_green.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        }
+       }
+       ImageWidgetClass ARStatIcon3 { ignorepointer 1 position 0.07 0.515 size 0.12 0.095 image0 "AshesReborn/gui/textures/ar_icon_wheel_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+       TextWidgetClass ARStatLabel3 { ignorepointer 1 position 0.22 0.525 size 0.38 0.080 text "TIRES" font "gui/fonts/metronbook16" "text color" 0.70 0.79 0.86 1 "text valign" center }
+       TextWidgetClass ARStatValue3 { ignorepointer 1 position 0.58 0.525 size 0.35 0.080 text "N/A" font "gui/fonts/metronbook16" "text color" 0.96 0.97 1 1 "text halign" right "text valign" center }
+       PanelWidgetClass ARStatTrack3 {
+        clipchildren 1
+        ignorepointer 1
+        color 0 0 0 0
+        position 0.07 0.625
+        size 0.86 0.048
+        style UIDefaultPanel
+        {
+         ImageWidgetClass ARStatTrackImg3 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_stat_track.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ImageWidgetClass ARStatFill3 { ignorepointer 1 position 0 0 size 0 1 image0 "AshesReborn/gui/textures/ar_stat_green.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        }
+       }
+       ImageWidgetClass ARStatIcon4 { ignorepointer 1 position 0.07 0.700 size 0.12 0.095 image0 "AshesReborn/gui/textures/ar_icon_fuel_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+       TextWidgetClass ARStatLabel4 { ignorepointer 1 position 0.22 0.710 size 0.38 0.080 text "FUEL" font "gui/fonts/metronbook16" "text color" 0.70 0.79 0.86 1 "text valign" center }
+       TextWidgetClass ARStatValue4 { ignorepointer 1 position 0.58 0.710 size 0.35 0.080 text "N/A" font "gui/fonts/metronbook16" "text color" 0.96 0.97 1 1 "text halign" right "text valign" center }
+       PanelWidgetClass ARStatTrack4 {
+        clipchildren 1
+        ignorepointer 1
+        color 0 0 0 0
+        position 0.07 0.810
+        size 0.86 0.048
+        style UIDefaultPanel
+        {
+         ImageWidgetClass ARStatTrackImg4 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_stat_track.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ImageWidgetClass ARStatFill4 { ignorepointer 1 position 0 0 size 0 1 image0 "AshesReborn/gui/textures/ar_stat_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        }
+       }
+       }
+      }
+
+      ImageWidgetClass PreviewFrame {
+       ignorepointer 1
+       position 0.205 0.125
+       size 0.545 0.415
+       image0 "AshesReborn/gui/textures/ar_vehicle_preview.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      ItemPreviewWidgetClass ARVehicle3DPreview {
+       clipchildren 0
+       ignorepointer 1
+       keepsafezone 0
+       position 0.215 0.140
+       size 0.525 0.385
+      }
+      TextWidgetClass ARPreviewStatus {
+       ignorepointer 1
+       position 0.215 0.290
+       size 0.525 0.06
+       text "VEHICLE PREVIEW"
+       font "gui/fonts/metronbook16"
+       "text color" 0.40 0.62 0.80 1
+       "text halign" center
+      }
+      ImageWidgetClass ARRotateIcon {
+       ignorepointer 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 1
+       vexactsize 1
+     position 0.714 0.138
+     size 24 24
+       image0 "AshesReborn/gui/textures/ar_icon_rotate_cyan.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      ButtonWidgetClass PreviewDrag {
+       position 0.205 0.125
+       size 0.545 0.415
+       text ""
+       color 0 0 0 0
+       style Empty
+      }
+      ButtonWidgetClass ARPreviewBack {
+       visible 0
+       position 0 0
+       size 0.01 0.01
+       text ""
+       color 0 0 0 0
+       style Empty
+      }
+
+      ImageWidgetClass ARInfoPanelBg {
+       ignorepointer 1
+       position 0.760 0.125
+       size 0.240 0.415
+       image0 "AshesReborn/gui/textures/ar_vehicle_information.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      FrameWidgetClass ARInfoFrame {
+       position 0.760 0.125
+       size 0.240 0.415
+       {
+        ImageWidgetClass ARIconInfo { ignorepointer 1 position 0.07 0.030 size 0.10 0.070 image0 "AshesReborn/gui/textures/ar_icon_info_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        TextWidgetClass ARInfoIdLab { ignorepointer 1 position 0.19 0.030 size 0.74 0.070 text "VEHICLE ID" font "gui/fonts/metronbook16" "text color" 0.51 0.61 0.70 1 "text valign" center }
+        TextWidgetClass AVMVehicleId { ignorepointer 1 position 0.07 0.100 size 0.86 0.055 text "" font "gui/fonts/metronbook-bold18" "text color" 0.96 0.97 1 1 }
+        ImageWidgetClass ARIconUser { ignorepointer 1 position 0.07 0.175 size 0.10 0.070 image0 "AshesReborn/gui/textures/ar_icon_user_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        TextWidgetClass ARInfoOwnLab { ignorepointer 1 position 0.19 0.175 size 0.74 0.070 text "OWNER" font "gui/fonts/metronbook16" "text color" 0.51 0.61 0.70 1 "text valign" center }
+        TextWidgetClass AVMVehicleOwner { ignorepointer 1 position 0.07 0.245 size 0.86 0.055 text "" font "gui/fonts/metronbook-bold18" "text color" 0.96 0.97 1 1 }
+        ImageWidgetClass ARIconClockInfo { ignorepointer 1 position 0.07 0.320 size 0.10 0.070 image0 "AshesReborn/gui/textures/ar_icon_clock_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        TextWidgetClass ARInfoStoreLab { ignorepointer 1 position 0.19 0.320 size 0.74 0.070 text "STORED ON" font "gui/fonts/metronbook16" "text color" 0.51 0.61 0.70 1 "text valign" center }
+        TextWidgetClass AVMVehicleStored { ignorepointer 1 position 0.07 0.390 size 0.86 0.070 text "" font "gui/fonts/metronbook16" "text color" 0.96 0.97 1 1 }
+        ImageWidgetClass ARIconPin { ignorepointer 1 position 0.07 0.480 size 0.10 0.070 image0 "AshesReborn/gui/textures/ar_icon_pin_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        TextWidgetClass ARInfoPosLab { ignorepointer 1 position 0.19 0.480 size 0.74 0.070 text "LAST LOCATION" font "gui/fonts/metronbook16" "text color" 0.51 0.61 0.70 1 "text valign" center }
+        TextWidgetClass ARDetailPosition { ignorepointer 1 position 0.07 0.550 size 0.86 0.100 text "" font "gui/fonts/metronbook16" "text color" 0.96 0.97 1 1 }
+        ImageWidgetClass ARIconShield { ignorepointer 1 position 0.07 0.670 size 0.10 0.070 image0 "AshesReborn/gui/textures/ar_icon_shield_cyan.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        TextWidgetClass ARInfoExpLab { ignorepointer 1 position 0.19 0.670 size 0.74 0.070 text "TIME REMAINING" font "gui/fonts/metronbook16" "text color" 0.51 0.61 0.70 1 "text valign" center }
+        TextWidgetClass AVMVehicleExpiry { ignorepointer 1 position 0.07 0.745 size 0.86 0.090 text "" font "gui/fonts/metronbook-bold18" "text color" 0.00 0.90 0.36 1 }
+       }
+      }
+
+      PanelWidgetClass ARInventoryPanel {
+       color 0 0 0 0
+       position 0.00 0.555
+       size 1.00 0.445
+       {
+        ImageWidgetClass ARInvTabAttachBg {
+         ignorepointer 1
+         position 0.00 0.00
+         size 0.18 0.10
+         image0 "AshesReborn/gui/textures/ar_inventory_tab_active.paa"
+         mode blend
+         "src alpha" 1
+         "stretch mode" stretch_w_h
+        }
+        ImageWidgetClass ARIconAttach {
+         ignorepointer 1
+              position 0.010 0.022
+     size 0.024 0.080
+         image0 "AshesReborn/gui/textures/ar_icon_wrench_cyan.paa"
+         mode blend
+         "src alpha" 1
+         "stretch mode" stretch_w_h
+        }
+        TextWidgetClass ARInvTabAttachLabel {
+         ignorepointer 1
+         position 0.04 0.00
+         size 0.14 0.10
+         text "ATTACHMENTS"
+         font "gui/fonts/metronbook-bold16"
+         "text color" 0.15 0.78 1 1
+         "text halign" center
+         "text valign" center
+        }
+        ButtonWidgetClass ARInvTabAttach {
+         position 0.00 0.00
+         size 0.18 0.10
+         text ""
+         color 0 0 0 0
+         style Empty
+        }
+        ImageWidgetClass ARInvTabCargoBg {
+         ignorepointer 1
+         position 0.19 0.00
+         size 0.14 0.10
+         image0 "AshesReborn/gui/textures/ar_inventory_tab_normal.paa"
+         mode blend
+         "src alpha" 1
+         "stretch mode" stretch_w_h
+        }
+        ImageWidgetClass ARIconCargoTab {
+         ignorepointer 1
+              position 0.198 0.022
+     size 0.024 0.080
+         image0 "AshesReborn/gui/textures/ar_icon_box.paa"
+         mode blend
+         "src alpha" 1
+         "stretch mode" stretch_w_h
+        }
+        TextWidgetClass ARInvTabCargoLabel {
+         ignorepointer 1
+         position 0.23 0.00
+         size 0.10 0.10
+         text "CARGO"
+         font "gui/fonts/metronbook-bold16"
+         "text color" 0.70 0.79 0.86 1
+         "text halign" center
+         "text valign" center
+        }
+        ButtonWidgetClass ARInvTabCargo {
+         position 0.19 0.00
+         size 0.14 0.10
+         text ""
+         color 0 0 0 0
+         style Empty
+        }
+        TextWidgetClass ARPartsCount { visible 0 ignorepointer 1 position 0 0 size 0.01 0.01 text "" }
+        TextWidgetClass ARCargoCount { visible 0 ignorepointer 1 position 0 0 size 0.01 0.01 text "" }
+        ImageWidgetClass ARImagePartsPrev { visible 0 ignorepointer 1 position 0.74 0.015 size 0.08 0.07 image0 "AshesReborn/gui/textures/ar_button_dark_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        ButtonWidgetClass ARPartsPrevious { visible 0 position 0.74 0.015 size 0.08 0.07 text "<" font "gui/fonts/metronbook-bold16" "text color" 0.89 0.93 0.96 1 color 0 0 0 0 style Empty }
+        TextWidgetClass ARPartsPage { visible 0 ignorepointer 1 position 0.82 0.015 size 0.08 0.07 text "" font "gui/fonts/metronbook14" "text color" 0.70 0.79 0.86 1 "text halign" center "text valign" center }
+        ImageWidgetClass ARImagePartsNext { visible 0 ignorepointer 1 position 0.90 0.015 size 0.08 0.07 image0 "AshesReborn/gui/textures/ar_button_dark_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+        ButtonWidgetClass ARPartsNext { visible 0 position 0.90 0.015 size 0.08 0.07 text ">" font "gui/fonts/metronbook-bold16" "text color" 0.89 0.93 0.96 1 color 0 0 0 0 style Empty }
+
+        PanelWidgetClass ARPartsPanel {
+         color 0 0 0 0
+         position 0.00 0.12
+         size 1.00 0.86
+         {
+       PanelWidgetClass ARPartsSlot0 {
+        color 0 0 0 0
+        position 0.020 0.08
+        size 0.150 0.78
+        {
+         ImageWidgetClass ARPartsBg0 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARPartsPreview0 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARPartsLabel0 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARPartsQty0 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARPartsSelect0 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARPartsSlot1 {
+        color 0 0 0 0
+        position 0.182 0.08
+        size 0.150 0.78
+        {
+         ImageWidgetClass ARPartsBg1 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARPartsPreview1 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARPartsLabel1 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARPartsQty1 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARPartsSelect1 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARPartsSlot2 {
+        color 0 0 0 0
+        position 0.344 0.08
+        size 0.150 0.78
+        {
+         ImageWidgetClass ARPartsBg2 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARPartsPreview2 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARPartsLabel2 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARPartsQty2 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARPartsSelect2 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARPartsSlot3 {
+        color 0 0 0 0
+        position 0.506 0.08
+        size 0.150 0.78
+        {
+         ImageWidgetClass ARPartsBg3 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARPartsPreview3 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARPartsLabel3 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARPartsQty3 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARPartsSelect3 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARPartsSlot4 {
+        color 0 0 0 0
+        position 0.668 0.08
+        size 0.150 0.78
+        {
+         ImageWidgetClass ARPartsBg4 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARPartsPreview4 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARPartsLabel4 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARPartsQty4 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARPartsSelect4 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARPartsSlot5 {
+        color 0 0 0 0
+        position 0.830 0.08
+        size 0.150 0.78
+        {
+         ImageWidgetClass ARPartsBg5 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARPartsPreview5 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARPartsLabel5 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARPartsQty5 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARPartsSelect5 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+         }
+        }
+        PanelWidgetClass ARCargoPanel {
+         color 0 0 0 0
+         position 0.00 0.12
+         size 1.00 0.86
+         {
+          TextWidgetClass ARCargoHeading {
+           visible 0
+           ignorepointer 1
+           position 0.00 0.00
+           size 0.30 0.10
+           text "CARGO"
+           font "gui/fonts/metronbook-bold16"
+           "text color" 0.15 0.78 1 1
+          }
+          ImageWidgetClass ARImageCargoPrev { visible 0 ignorepointer 1 position 0.74 0.00 size 0.08 0.10 image0 "AshesReborn/gui/textures/ar_button_dark_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+          ButtonWidgetClass ARCargoPrevious { visible 0 position 0.74 0.00 size 0.08 0.10 text "<" font "gui/fonts/metronbook-bold16" "text color" 0.89 0.93 0.96 1 color 0 0 0 0 style Empty }
+          TextWidgetClass ARCargoPage { visible 0 ignorepointer 1 position 0.82 0.00 size 0.08 0.10 text "" font "gui/fonts/metronbook14" "text color" 0.70 0.79 0.86 1 "text halign" center "text valign" center }
+          ImageWidgetClass ARImageCargoNext { visible 0 ignorepointer 1 position 0.90 0.00 size 0.08 0.10 image0 "AshesReborn/gui/textures/ar_button_dark_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+          ButtonWidgetClass ARCargoNext { visible 0 position 0.90 0.00 size 0.08 0.10 text ">" font "gui/fonts/metronbook-bold16" "text color" 0.89 0.93 0.96 1 color 0 0 0 0 style Empty }
+       PanelWidgetClass ARCargoSlot0 {
+        color 0 0 0 0
+        position 0.020 0.14
+        size 0.150 0.80
+        {
+         ImageWidgetClass ARCargoBg0 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARCargoPreview0 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARCargoLabel0 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARCargoQty0 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARCargoSelect0 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARCargoSlot1 {
+        color 0 0 0 0
+        position 0.182 0.14
+        size 0.150 0.80
+        {
+         ImageWidgetClass ARCargoBg1 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARCargoPreview1 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARCargoLabel1 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARCargoQty1 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARCargoSelect1 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARCargoSlot2 {
+        color 0 0 0 0
+        position 0.344 0.14
+        size 0.150 0.80
+        {
+         ImageWidgetClass ARCargoBg2 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARCargoPreview2 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARCargoLabel2 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARCargoQty2 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARCargoSelect2 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARCargoSlot3 {
+        color 0 0 0 0
+        position 0.506 0.14
+        size 0.150 0.80
+        {
+         ImageWidgetClass ARCargoBg3 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARCargoPreview3 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARCargoLabel3 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARCargoQty3 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARCargoSelect3 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARCargoSlot4 {
+        color 0 0 0 0
+        position 0.668 0.14
+        size 0.150 0.80
+        {
+         ImageWidgetClass ARCargoBg4 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARCargoPreview4 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARCargoLabel4 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARCargoQty4 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARCargoSelect4 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+       PanelWidgetClass ARCargoSlot5 {
+        color 0 0 0 0
+        position 0.830 0.14
+        size 0.150 0.80
+        {
+         ImageWidgetClass ARCargoBg5 { ignorepointer 1 position 0 0 size 1 1 image0 "AshesReborn/gui/textures/ar_item_idle.paa" mode blend "src alpha" 1 "stretch mode" stretch_w_h }
+         ItemPreviewWidgetClass ARCargoPreview5 { ignorepointer 1 keepsafezone 0 position 0.12 0.06 size 0.76 0.52 }
+         TextWidgetClass ARCargoLabel5 { ignorepointer 1 position 0.04 0.60 size 0.92 0.20 text "" font "gui/fonts/metronbook14" "text color" 0.96 0.97 1 1 "text halign" center }
+         TextWidgetClass ARCargoQty5 { ignorepointer 1 position 0.04 0.80 size 0.92 0.16 text "" font "gui/fonts/metronbook14" "text color" 0.00 0.90 0.36 1 "text halign" center }
+         ButtonWidgetClass ARCargoSelect5 { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+        }
+       }
+         }
+        }
+       }
+      }
+     }
+    }
+
+    ImageWidgetClass ARImageConfirmBtn {
+     ignorepointer 1
+     position 0.016 0.855
+     size 0.478 0.115
+     image0 "AshesReborn/gui/textures/ar_button_blue_idle.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass ARIconConfirm {
+     ignorepointer 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+     position 0.176 0.887
+     size 44 44
+     image0 "AshesReborn/gui/textures/ar_icon_check_cyan.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    TextWidgetClass ARLabelConfirmBtn {
+     ignorepointer 1
+     position 0.210 0.855
+     size 0.270 0.115
+     text "RETRIEVE VEHICLE"
+     font "gui/fonts/metronbook-bold22"
+     "text color" 0.98 0.99 1 1
+     "text halign" left
+     "text valign" center
+    }
+    TextWidgetClass ARConfirmSub {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 0.01 0.01
+     text ""
+    }
+    ButtonWidgetClass ConfirmBtn {
+     position 0.016 0.855
+     size 0.478 0.115
+     text ""
+     color 0 0 0 0
+     style Empty
+    }
+    ImageWidgetClass ARImageSpawnBtn { visible 0 ignorepointer 1 position 0 0 size 0.01 0.01 }
+    ImageWidgetClass ARIconSpawn { visible 0 ignorepointer 1 position 0 0 size 0.01 0.01 }
+    TextWidgetClass ARLabelSpawnBtn { visible 0 ignorepointer 1 position 0 0 size 0.01 0.01 text "" }
+    TextWidgetClass ARSpawnSub { visible 0 ignorepointer 1 position 0 0 size 0.01 0.01 text "" }
+    ButtonWidgetClass ARSpawnBtn { visible 0 position 0 0 size 0.01 0.01 text "" color 0 0 0 0 style Empty }
+    ImageWidgetClass ARImageDeleteBtn {
+     ignorepointer 1
+     position 0.506 0.855
+     size 0.478 0.115
+     image0 "AshesReborn/gui/textures/ar_button_red_idle.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass ARIconDelete {
+     ignorepointer 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+     position 0.674 0.887
+     size 44 44
+     image0 "AshesReborn/gui/textures/ar_icon_trash.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    TextWidgetClass ARLabelDeleteBtn {
+     ignorepointer 1
+     position 0.708 0.855
+     size 0.250 0.115
+     text "DELETE VEHICLE"
+     font "gui/fonts/metronbook-bold22"
+     "text color" 0.96 0.97 1 1
+     "text halign" left
+     "text valign" center
+    }
+    TextWidgetClass ARDeleteSub {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 0.01 0.01
+     text ""
+    }
+    ButtonWidgetClass ARDeleteBtn {
+     position 0.506 0.855
+     size 0.478 0.115
+     text ""
+     color 0 0 0 0
+     style Empty
+    }
+    FrameWidgetClass ARConfirmDeletePanel {
+     visible 0
+     clipchildren 0
+     position 0 0
+     size 1 1
+     {
+      ImageWidgetClass ARConfirmDeleteScrim {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       color 1 1 1 1
+       image0 "AshesReborn/gui/textures/ar_chrome_center.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      ButtonWidgetClass ARConfirmDeleteBlocker { position 0 0 size 1 1 text "" color 0 0 0 0 style Empty }
+      ImageWidgetClass ARConfirmDeleteBg {
+       ignorepointer 1
+       position 0.24 0.26
+       size 0.52 0.44
+       color 1 1 1 1
+       image0 "AshesReborn/gui/textures/ar_main_background.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      TextWidgetClass ARConfirmDeleteTitle {
+       ignorepointer 1
+       position 0.27 0.30
+       size 0.46 0.08
+       text "DELETE VEHICLE?"
+       font "gui/fonts/metronbook-bold22"
+       "text color" 1 0.45 0.45 1
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass ARConfirmDeleteBody {
+       ignorepointer 1
+       position 0.28 0.38
+       size 0.44 0.14
+       text "This permanently removes the vehicle from MongoDB. This cannot be undone."
+       font "gui/fonts/metronbook16"
+       "text color" 0.89 0.93 0.96 1
+       "text halign" center
+      }
+      ImageWidgetClass ARConfirmCancelBg {
+       ignorepointer 1
+       position 0.30 0.54
+       size 0.18 0.09
+       image0 "AshesReborn/gui/textures/ar_button_dark_idle.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      TextWidgetClass ARConfirmCancelLabel {
+       ignorepointer 1
+       position 0.30 0.54
+       size 0.18 0.09
+       text "CANCEL"
+       font "gui/fonts/metronbook-bold16"
+       "text color" 0.96 0.97 1 1
+       "text halign" center
+       "text valign" center
+      }
+      ButtonWidgetClass ARConfirmDeleteCancel {
+       position 0.30 0.54
+       size 0.18 0.09
+       text ""
+       color 0 0 0 0
+       style Empty
+      }
+      ImageWidgetClass ARConfirmOkBg {
+       ignorepointer 1
+       position 0.52 0.54
+       size 0.18 0.09
+       image0 "AshesReborn/gui/textures/ar_button_red_idle.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      TextWidgetClass ARConfirmOkLabel {
+       ignorepointer 1
+       position 0.52 0.54
+       size 0.18 0.09
+       text "DELETE"
+       font "gui/fonts/metronbook-bold16"
+       "text color" 0.96 0.97 1 1
+       "text halign" center
+       "text valign" center
+      }
+      ButtonWidgetClass ARConfirmDeleteOk {
+       position 0.52 0.54
+       size 0.18 0.09
+       text ""
+       color 0 0 0 0
+       style Empty
+      }
+     }
+    }
+
+    ImageWidgetClass ARItemTooltip {
+     visible 0
+     ignorepointer 1
+     position 0.55 0.55
+     size 0.22 0.12
+     image0 "AshesReborn/gui/textures/ar_tooltip.paa"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+    }
+    TextWidgetClass ARInfoMessage {
+     visible 0
+     ignorepointer 1
+     position 0.55 0.56
+     size 0.20 0.10
+     text ""
+     font "gui/fonts/metronbook14"
+     "text color" 0.96 0.97 1 1
+    }
+
+    PanelWidgetClass FooterPanel { visible 0 position 0 0 size 0.01 0.01 }
+    PanelWidgetClass ErrorPanel {
+     ignorepointer 1
+     color 0 0 0 0
+     position 0.282 0.818
+     size 0.702 0.034
+     {
+      ImageWidgetClass ARIconWarning {
+       ignorepointer 1
+       position 0.000 0.10
+       size 0.028 0.80
+       image0 "AshesReborn/gui/textures/ar_icon_warning_cyan.paa"
+       mode blend
+       "src alpha" 1
+       "stretch mode" stretch_w_h
+      }
+      TextWidgetClass ErrorText {
+       ignorepointer 1
+       position 0.036 0
+       size 0.960 1
+       text ""
+       font "gui/fonts/metronbook14"
+       "text color" 1 0.40 0.40 1
+       "text halign" left
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass MaxStoredCarsSpacer {
+     visible 0
+     position 0 0
+     size 0.01 0.01
+     {
+      TextWidgetClass CurrentCountValue { position 0 0 size 1 1 text "" }
+      TextWidgetClass MaxAllowedValue { position 0 0 size 1 1 text "" }
+     }
+    }
+    PanelWidgetClass HiddenDump {
+     visible 0
+     position 0 0
+     size 0.01 0.01
+     {
+      TextWidgetClass LogoText { position 0 0 size 0.01 0.01 text "AR" }
+      ButtonWidgetClass ARResetSelection { position 0 0 size 0.01 0.01 text "" color 0 0 0 0 style Empty }
+      ButtonWidgetClass ARInfoToggle { position 0 0 size 0.01 0.01 text "" color 0 0 0 0 style Empty }
+      ButtonWidgetClass CloseX { position 0 0 size 0.01 0.01 text "" color 0 0 0 0 style Empty }
+      TextWidgetClass OverviewHeading { position 0 0 size 0.01 0.01 text "" }
+     }
+    }
+   }
+  }
+ }
+}
+

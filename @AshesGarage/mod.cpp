@@ -1,0 +1,11 @@
+name = "AshesGarage";
+picture = "AshesReborn/data/logo/apex_logo.edds";
+logo = "AshesReborn/data/logo/apex_logo.edds";
+logoSmall = "AshesReborn/data/logo/apex_logo.edds";
+logoOver = "AshesReborn/data/logo/apex_logo.edds";
+overview = "Persistent vehicle storage and garage management for DayZ, with an expanded garage interface.";
+tooltip = "AshesGarage";
+action = "";
+author = "Your Community";
+authorID = "";
+version = "0.1.0";

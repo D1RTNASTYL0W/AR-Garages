@@ -57,10 +57,10 @@ class ApexVehicleManagementVehicle
 		ClassName = m_Vehicle.GetType();
 		GetGame().ObjectGetDisplayName(m_Vehicle, DisplayName);
 		LastPosition = m_Vehicle.GetPosition();
-		CarKeyId = MCK_Transport.GetTransportKeyId(m_Vehicle);
-		CarScriptId = MCK_Transport.GetTransportId(m_Vehicle);
-		OriginalOwnerId = MCK_Transport.GetOriginalOwnerId(m_Vehicle);
-		OriginalOwnerName = MCK_Transport.GetOriginalOwnerName(m_Vehicle);
+		CarKeyId = AR_VehicleLock.GetTransportKeyId(m_Vehicle);
+		CarScriptId = AR_VehicleLock.GetTransportId(m_Vehicle);
+		OriginalOwnerId = AR_VehicleLock.GetOriginalOwnerId(m_Vehicle);
+		OriginalOwnerName = AR_VehicleLock.GetOriginalOwnerName(m_Vehicle);
 		ParkedPlayerId = playerID;
 		ParkedPlayerName = playerName;
 		int fluidSize = EnumTools.GetEnumSize(CarFluid);
@@ -72,7 +72,7 @@ class ApexVehicleManagementVehicle
 		{
 			float fluidFraction = -1; 
 			float fluidCapacity = -1; 
-			MCK_Transport.GetFluidData(m_Vehicle, i, fluidFraction, fluidCapacity);
+			AR_VehicleLock.GetFluidData(m_Vehicle, i, fluidFraction, fluidCapacity);
 			fluids.Insert(fluidFraction * fluidCapacity);
 		}
 		inventory = new MF_Inventory(g_Game.GetApexVehicleManagementSettings().StoreCargo);
@@ -90,7 +90,7 @@ class ApexVehicleManagementVehicle
 		m_Vehicle.SetPosition(position);
 		m_Vehicle.SetOrientation(orientation);
 		m_Vehicle.SetDirection(m_Vehicle.GetDirection());
-		MCK_Transport.AssignNewData(m_Vehicle, CarScriptId, CarKeyId, OriginalOwnerId, OriginalOwnerName);
+		AR_VehicleLock.AssignNewData(m_Vehicle, CarScriptId, CarKeyId, OriginalOwnerId, OriginalOwnerName);
 		// Sync happens after RestoreInventory()
 		int i = 0;
 		int fluidSize = EnumTools.GetEnumSize(CarFluid);		
@@ -103,7 +103,7 @@ class ApexVehicleManagementVehicle
 
 		for (i = 0; i < fluidSize; ++i)
 		{
-			MCK_Transport.FillFluid(m_Vehicle, i, fluids[i], refuelCars);
+			AR_VehicleLock.FillFluid(m_Vehicle, i, fluids[i], refuelCars);
 		}
 
 		GetGame().RemoteObjectCreate(m_Vehicle);

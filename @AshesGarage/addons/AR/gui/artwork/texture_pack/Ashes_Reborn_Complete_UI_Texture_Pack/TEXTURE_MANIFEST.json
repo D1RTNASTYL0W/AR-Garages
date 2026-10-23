@@ -1,0 +1,650 @@
+{
+  "target_reference": "09_reference/reference_target.png",
+  "textures": [
+    {
+      "file": "05_stats/ar_stat_green_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    },
+    {
+      "file": "05_stats/ar_stat_track_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    },
+    {
+      "file": "05_stats/ar_stat_orange_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    },
+    {
+      "file": "05_stats/ar_stat_red_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    },
+    {
+      "file": "05_stats/ar_stat_yellow_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    },
+    {
+      "file": "05_stats/ar_stat_cyan_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_red_idle_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_red_pressed_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_blue_pressed_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_close_hover_128x128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_dark_hover_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_red_hover_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_dark_disabled_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_blue_disabled_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_dark_idle_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_dark_pressed_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_red_disabled_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_blue_hover_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_close_idle_128x128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "07_actions/ar_button_blue_idle_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_info_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_gear_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_wrench_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_car_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_user_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_rotate_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_warning_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_fuel_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_heart_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_search_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_chevron-right_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_clock_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_user_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_trash_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_battery_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_rotate_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_pin_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_garage_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_clock_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_info_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_box_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_shield_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_star_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_shield_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_search_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_chevron-left_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_heart_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_wrench_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_battery_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_gear_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_wheel_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_garage_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_warning_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_close_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_star_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_fuel_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_pin_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_car_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_check_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_chevron-left_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_close_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_check_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_trash_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_wheel_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_chevron-right_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "08_icons/ar_icon_box_cyan_128.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "file": "04_preview_and_info/ar_vehicle_preview_1024x512.png",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "file": "04_preview_and_info/ar_badge_256x64.png",
+      "size": [
+        256,
+        64
+      ]
+    },
+    {
+      "file": "04_preview_and_info/ar_vehicle_information_512x512.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "file": "04_preview_and_info/ar_tooltip_512x256.png",
+      "size": [
+        512,
+        256
+      ]
+    },
+    {
+      "file": "04_preview_and_info/ar_thumbnail_256x256.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "04_preview_and_info/ar_vehicle_stats_256x512.png",
+      "size": [
+        256,
+        512
+      ]
+    },
+    {
+      "file": "06_inventory/ar_inventory_tab_normal_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    },
+    {
+      "file": "06_inventory/ar_item_idle_256x256.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "06_inventory/ar_item_disabled_256x256.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "06_inventory/ar_inventory_tab_active_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    },
+    {
+      "file": "06_inventory/ar_item_hover_256x256.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "06_inventory/ar_item_selected_256x256.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "01_backgrounds/ar_divider_1024x16.png",
+      "size": [
+        1024,
+        16
+      ]
+    },
+    {
+      "file": "01_backgrounds/ar_section_backdrop_1024x512.png",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "file": "01_backgrounds/ar_header_2048x128.png",
+      "size": [
+        2048,
+        128
+      ]
+    },
+    {
+      "file": "01_backgrounds/ar_main_background_2048x1024.png",
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    {
+      "file": "02_navigation/ar_nav_active_256x128.png",
+      "size": [
+        256,
+        128
+      ]
+    },
+    {
+      "file": "02_navigation/ar_nav_hover_256x128.png",
+      "size": [
+        256,
+        128
+      ]
+    },
+    {
+      "file": "02_navigation/ar_nav_disabled_256x128.png",
+      "size": [
+        256,
+        128
+      ]
+    },
+    {
+      "file": "02_navigation/ar_nav_idle_256x128.png",
+      "size": [
+        256,
+        128
+      ]
+    },
+    {
+      "file": "03_vehicle_list/ar_vehicle_selected_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "03_vehicle_list/ar_vehicle_idle_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "03_vehicle_list/ar_vehicle_disabled_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "03_vehicle_list/ar_vehicle_hover_512x128.png",
+      "size": [
+        512,
+        128
+      ]
+    },
+    {
+      "file": "03_vehicle_list/ar_search_idle_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    },
+    {
+      "file": "03_vehicle_list/ar_search_focus_512x64.png",
+      "size": [
+        512,
+        64
+      ]
+    }
+  ],
+  "note": "Transparent PNG RGBA; UI text, vehicle previews, item previews and real data must be created by DayZ widgets/code."
+}

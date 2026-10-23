@@ -61,9 +61,14 @@ class AVM_Helper
 				reason = "#avm_e_inventoryblacklist" + " " + item;
 				return false;
 			}
+			if(!CheckBlacklistedNested(transport, item))
+			{
+				reason = "#avm_e_inventoryblacklist" + " " + item;
+				return false;
+			}
 		}
 
-		if (MCK_Transport.IsEngineOn(transport))
+		if (AR_VehicleLock.IsEngineOn(transport))
 		{	
 			reason = "#avm_e_engineon";
 			return false;
@@ -86,33 +91,70 @@ class AVM_Helper
 		}
 
 
-		if (!MCK_Transport.HasMCKAssigned(transport))
+		if (!AR_VehicleLock.HasKeyAssigned(transport))
 		{	
 			reason = "#avm_e_keynotassigned";
 			return false;
 		}
-		
-		if(player.GetItemInHands() && player.GetItemInHands().IsInherited(MCK_MasterKey))
-		{
-			return true;
-		}
 
-		//search inventory for key
-		if (!MCK_Helper.MCK_PlayerHasCorrectKeyInInventory(player, MCK_Transport.GetTransportKeyId(transport)))
+		if (!PlayerHasCorrectKey(player, AR_VehicleLock.GetTransportKeyId(transport)))
 		{	
 			reason = "#avm_e_nokey";
 			return false;
 		}
 
-		// Don't allow parking if key is not in hand
-		MCK_CarKey_Base carKey = MCK_CarKey_Base.Cast(player.GetItemInHands());
-		if (carKey && carKey.m_MCKId != MCK_Transport.GetTransportKeyId(transport))
-		{	
-			reason = "#avm_e_keymismatch";
-			return false;
-		}
-
 		return true;
+	}
+
+	static void CollectInventoryKeys(PlayerBase player, array<int> keyIds, out bool hasMaster)
+	{
+		hasMaster = false;
+		if (!player || !player.GetInventory() || !keyIds)
+			return;
+
+		array<EntityAI> entities = new array<EntityAI>;
+		player.GetInventory().EnumerateInventory(InventoryTraversalType.PREORDER, entities);
+		for (int i = 0; i < entities.Count(); i++)
+		{
+			EntityAI item = entities.Get(i);
+			if (!item)
+				continue;
+			if (item.IsInherited(AR_MasterKey))
+			{
+				hasMaster = true;
+				continue;
+			}
+			AR_CarKey_Base carKey = AR_CarKey_Base.Cast(item);
+			if (carKey && carKey.m_ARKeyId > 0 && keyIds.Find(carKey.m_ARKeyId) == -1)
+				keyIds.Insert(carKey.m_ARKeyId);
+		}
+	}
+
+	static bool PlayerHasMasterKey(PlayerBase player)
+	{
+		array<int> keyIds = new array<int>;
+		bool hasMaster;
+		CollectInventoryKeys(player, keyIds, hasMaster);
+		return hasMaster;
+	}
+
+	static bool PlayerHasCorrectKey(PlayerBase player, int keyId)
+	{
+		return PlayerHasKeyId(player, keyId);
+	}
+
+	static bool PlayerHasKeyId(PlayerBase player, int keyId)
+	{
+		if (!player)
+			return false;
+		array<int> keyIds = new array<int>;
+		bool hasMaster;
+		CollectInventoryKeys(player, keyIds, hasMaster);
+		if (hasMaster)
+			return true;
+		if (keyId <= 0)
+			return false;
+		return keyIds.Find(keyId) != -1;
 	}
 
 	static bool CheckEntityInventoryCount(EntityAI entity, out bool hasCount, out string reasonItem)
@@ -149,6 +191,102 @@ class AVM_Helper
 			}			
 		}	
 		return true;	
+	}
+
+	static bool CheckBlacklistedNested(EntityAI entity, out string reasonItem)
+	{
+		if (!entity || !entity.GetInventory())
+			return true;
+
+		CargoBase cargo = entity.GetInventory().GetCargo();
+		if (cargo)
+		{
+			for (int cargoIndex = 0; cargoIndex < cargo.GetItemCount(); cargoIndex++)
+			{
+				EntityAI cargoItem = cargo.GetItem(cargoIndex);
+				if (!cargoItem)
+					continue;
+				if (!MF_Helper.CheckBlacklistedItem(cargoItem, g_Game.GetApexVehicleManagementSettings().ItemsBlacklist, reasonItem))
+					return false;
+				if (!CheckBlacklistedNested(cargoItem, reasonItem))
+					return false;
+			}
+		}
+
+		int attCount = entity.GetInventory().AttachmentCount();
+		for (int attIndex = 0; attIndex < attCount; attIndex++)
+		{
+			EntityAI att = entity.GetInventory().GetAttachmentFromIndex(attIndex);
+			if (!att)
+				continue;
+			if (!MF_Helper.CheckBlacklistedItem(att, g_Game.GetApexVehicleManagementSettings().ItemsBlacklist, reasonItem))
+				return false;
+			if (!CheckBlacklistedNested(att, reasonItem))
+				return false;
+		}
+		return true;
+	}
+
+	static bool IsGarageContainer(EntityAI item)
+	{
+		if (!item)
+			return false;
+		if (item.IsKindOf("Barrel_ColorBase"))
+			return true;
+		if (item.IsKindOf("WoodenCrate"))
+			return true;
+		if (item.IsKindOf("SeaChest"))
+			return true;
+		return false;
+	}
+
+	static bool IsGarageContainerType(string typeName)
+	{
+		if (typeName == "")
+			return false;
+		if (GetGame().IsKindOf(typeName, "Barrel_ColorBase"))
+			return true;
+		if (GetGame().IsKindOf(typeName, "WoodenCrate"))
+			return true;
+		if (GetGame().IsKindOf(typeName, "SeaChest"))
+			return true;
+		return false;
+	}
+
+	static void CollectEntityCargo(EntityAI entity, array<string> names, array<float> healths, string prefix)
+	{
+		if (!entity || !entity.GetInventory())
+			return;
+
+		CargoBase cargo = entity.GetInventory().GetCargo();
+		if (cargo)
+		{
+			for (int cargoIndex = 0; cargoIndex < cargo.GetItemCount(); cargoIndex++)
+			{
+				EntityAI cargoItem = cargo.GetItem(cargoIndex);
+				if (!cargoItem)
+					continue;
+				if (IsGarageContainer(cargoItem))
+				{
+					CollectEntityCargo(cargoItem, names, healths, prefix);
+					continue;
+				}
+				if (names)
+					names.Insert(prefix + cargoItem.GetType());
+				if (healths)
+					healths.Insert(cargoItem.GetHealth01("", ""));
+				CollectEntityCargo(cargoItem, names, healths, prefix + "  + ");
+			}
+		}
+
+		int attCount = entity.GetInventory().AttachmentCount();
+		for (int attIndex = 0; attIndex < attCount; attIndex++)
+		{
+			EntityAI att = entity.GetInventory().GetAttachmentFromIndex(attIndex);
+			if (!att)
+				continue;
+			CollectEntityCargo(att, names, healths, prefix);
+		}
 	}
 
 };

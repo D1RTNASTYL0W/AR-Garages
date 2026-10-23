@@ -1,4 +1,4 @@
-class AVM_ParkingKey : ItemBase 
+class AVM_ParkingKey : AR_MasterKey 
 {
     override void SetActions()
 	{

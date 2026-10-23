@@ -1,0 +1,1 @@
+Favorite icons: favorite_off = outlined, favorite_on = solid gold, favorite_hover = bright gold, favorite_pressed = darker gold. All 128x128 transparent PNG. Original icons retained. Vehicle, cargo and attachment imagery excluded.
